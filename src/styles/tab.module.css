@@ -1,0 +1,107 @@
+:root {
+    --communication-light:#EDFCFF;
+    --communication-dark: #3EBEFF;
+    --visual-light:#DCCCFF;
+    --visual-dark:#905CFF;
+    --music-light: #FFEDC8;
+    --music-dark: #F9B215;
+    --dark:#003F5C;
+  }
+
+.container {
+    display: inline-block;
+    padding: 20px 24px;
+    border-radius: 8px;
+    color: white;
+    position: relative;
+}
+
+.headerCommunication {
+    background-color: #D5F1FE;
+    color: #003F5C
+}
+
+.headerCommunication .clip {
+    display: none;
+}
+
+.communicationActive {
+    background-color: #003F5C;
+    color: white;
+}
+
+.communicationActive .clip {
+    display: block;
+}
+
+.headerCommunication .clip {
+    background-color: #003F5C;
+}
+
+/* Visual Art Theme */
+.headerVisualArts {
+    background-color: var(--visual-light);
+    color: var(--visual-dark)
+}
+
+.headerVisualArts .clip {
+    display: none;
+}
+
+.visualActive {
+    background-color: var(--visual-dark);
+    color: var(--visual-light);
+}
+
+.visualActive .clip {
+    display: block;
+}
+
+.headerVisualArts .clip {
+    background-color: var(--visual-dark);
+}
+
+/* End Of Visual Arts */
+
+/* Music */
+.headerMusic {
+    background-color: var(--music-light);
+    color: var(--music-dark)
+}
+
+.headerMusic .clip {
+    display: none;
+}
+
+.musicActive {
+    background-color: var(--music-dark);
+    color: var(--music-light);
+}
+
+.musicActive .clip {
+    display: block;
+}
+
+.headerMusic .clip {
+    background-color: var(--music-dark);
+}
+/* End of Music */
+
+.container p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container h4 {
+    font-size: 24px;
+}
+
+.clip {
+    width: 16px;
+    height: 16px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(180deg) translateX(50%);
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+}
